@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Tic Tac Toe</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body id="body_element">
+	<header id="header_element">
+		<div class="header_container_tic">
+			<img src="img/tttmarqlrg.gif" alt="Tic Tac Toe">
+		</div>
+	</header>
+	<main id="main_element">
+		<div class="main_container_tic">
+			<div class="human">				<!-- left column -->
+				<h1>Last Human <img src="img/krestik.png" alt="krestik"></h1>
+				<img src="img/human1.jpg" alt="human">
+				<p id="human_turn">Your turn!</p>
+			</div>
+			<div class="for_lines_wrapper">  		<!-- for absolute position of victory line -->
+
+				<div id="victory_line"></div>        <!-- +++ class victory line -->
+
+				<div class="tic_tac_field" id="tic_tac_field">				<!-- central column -->
+					<div class="field" id="field_1">
+						<img class="krestik" id="krestik1" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik1" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_2">
+						<img class="krestik" id="krestik2" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik2" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_3">
+						<img class="krestik" id="krestik3" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik3" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_4">
+						<img class="krestik" id="krestik4" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik4" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_5">
+						<img class="krestik" id="krestik5" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik5" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_6">
+						<img class="krestik" id="krestik6" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik6" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_7">
+						<img class="krestik" id="krestik7" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik7" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_8">
+						<img class="krestik" id="krestik8" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik8" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+					<div class="field" id="field_9">
+						<img class="krestik" id="krestik9" src="img/krestik.png" alt="krestik" hidden>
+						<img class="nolik" id="nolik9" src="img/nolik.png" alt="nolik" hidden>
+					</div>
+				</div>
+			</div>
+			<div class="computer"> 				<!-- right column -->
+				<h1>Evil Computer <img src="img/nolik.png" alt="nolik"></h1>
+				<img src="img/robot1.jpg" alt="robot">
+				<p id="computer_turn" hidden>Calculating...</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<button id="play_again_button" type="button" hidden>Play again!</button>
+		<img id="fail_image" src="img/fail.png" alt="Fail" hidden>
+	</footer>
+
+
+	<script src="script.js"></script>
+</body>
+</html>
